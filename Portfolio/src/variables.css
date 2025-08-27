@@ -1,0 +1,10 @@
+:root{
+ /* dark mode */
+  --background: #0E3D04;
+  --primary-green: #155B07;
+  --primary-text: #E6E6E6;
+  --secondary-text: #A6A6A6; 
+  --borders: #1F1F1F;
+  --active-element: #4CAF50;
+  --buttons: #2E7D1A;
+}
