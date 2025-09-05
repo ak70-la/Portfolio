@@ -1,16 +1,27 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Services from "./Components/Services";
+import Contact from "./Components/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-     <div className="main">
-       
-      <h1>Hii, I am Arafat Khan</h1>
-      <p>I am a software Developer Web developer Cyber Security practicnor.</p>
-
-     </div>
+        <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="about" element={<About />}/> 
+          <Route path="skills" element={<Skills />}/>
+          <Route path="services" element={<Services />}/>
+          <Route path="contact" element={<Contact />}/>
+        </Routes>
+        </BrowserRouter>
+    
+     
     </>
   );
 }
