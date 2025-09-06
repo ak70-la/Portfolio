@@ -3,9 +3,11 @@ import React from "react";
 function Home() {
   return (
     <>
-      <section>
-        <div class="bg-[var(--background)] h-[100vh]">
-          <div className="image"></div>
+      <section class="bg-black text-white h-[100%]">
+        <div class="">
+          <div class="p-2.5">
+            <img class="ml-7 mt-5 rounded-[100%] h-[450px] w-[325px] shadow-[0_0_25px_10px_#b74b4b]   " src="/anime-photo.jpeg" alt="My photo" />
+          </div>
           <div className="content">
             <h1>
               Hey I'm <span>Arafat Khan</span>
@@ -23,7 +25,10 @@ function Home() {
               ducimus, temporibus saepe? Corrupti, reiciendis.
             </p>
             <div className="social-link">
-
+              {/* <FontAwesomeIcon icon="fa-brands fa-github" />
+              <FontAwesomeIcon icon="fa-brands fa-linked-in" />
+              <FontAwesomeIcon icon="fa-brands fa-github" />
+              <FontAwesomeIcon icon="fa-brands fa-github" /> */}
             </div>
             <div className="btn">
               <button>Hire me</button>
