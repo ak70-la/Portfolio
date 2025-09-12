@@ -3,11 +3,11 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <footer>
-        <div className="text">
+      <footer className='bg-background text-primary-text flex justify-center'>
+        <div class='text-center'>
             <span>Created By
-            <a href="#">Arafat Khan</a>
-            |&#169; 2025 All Rights Reserved</span>
+            <a href="#"> Arafat Khan</a>
+            |<br />&#169; 2025 <br /> All Rights Reserved</span>
         </div>
       </footer>
     </>

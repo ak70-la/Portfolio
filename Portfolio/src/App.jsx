@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Services from "./Components/Services";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="contact" element={<Contact />}/>
         </Routes>
         </BrowserRouter>
-    
+        <Footer />
      
     </>
   );

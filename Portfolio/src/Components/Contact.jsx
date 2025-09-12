@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
       <section>
-        <div className="content">
+        <div className="bg-background text-primary-text">
           <div className="topic">
             <span>Contact me</span>
           </div>

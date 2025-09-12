@@ -4,7 +4,7 @@ function Services() {
   return (
     <>
       <section>
-        <div className="content">
+        <div className="bg-background text-primary-text">
           <div className="title">
             <span>Services</span>
           </div>

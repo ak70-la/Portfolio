@@ -1,17 +1,42 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* ... */
+
+@plugin 'tailwind-scrollbar' {
+  nocompatible: true;
+  preferredStrategy: 'pseudoelements';
+}
+
 
 *{
   @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libertinus+Serif+Display&family=PT+Serif+Caption:ital@0;1&family=Tangerine:wght@400;700&display=swap");
   
   
 }
-:root{
-   /* dark mode */
-  --background: #000000;
-  --primary: #b74b4b;
-  --primary-text: #E6E6E6;
-  --secondary-text: #A6A6A6; 
-  --borders: #1F1F1F;
-  --active-element: #4CAF50;
-  --buttons: #2E7D1A;
+
+@layer utilities {
+  /* @keyframes typewriter {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinkCaret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  .animate-typewriter {
+    animation: typewriter 2.5s steps(30) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+  }
+  .animate-blinkCaret {
+    animation: blinkCaret 0.75s step-end infinite;
+  } */
+}
+@theme{
+  --color-highlight-text : #b74b4b;
+  --color-background : #000000;
+  --color-primary-text : #ffffff;
+  --color-active : #FF6B6B;
+
 }
