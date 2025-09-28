@@ -3,22 +3,26 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <section>
-        <div className="bg-background text-primary-text">
-          <div className="topic">
+      <section
+        id="contact"
+        className="bg-background text-primary-text h-[80vh] p-1 "
+      >
+        <div className="mt-6">
+          {/* contant */}
+          <div className="flex items-center justify-center p-2.5 mb-10">
+            {/* title */}
             <span>Contact me</span>
           </div>
-          <div className="text">
-            <div className="topic">Have any Project</div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              accusamus iusto modi iste pariatur quae! Omnis quis recusandae
-              possimus nam incidunt natus deleniti consequatur dolorem neque
-              officiis qui dignissimos inventore culpa quos sit officia error
-              nostrum sapiente eos, soluta itaque a et ipsum ex! Dolor?D
-            </p>
-            <div className="btn">
-              <button>Let's Chat</button>
+          <div className="flex justify-center items-center flex-col">
+            <div className="uppercase">Have any Project ?</div>
+            <div className="p-2 mt-20">
+              <button
+                className="bg-highlight-text w-100 h-8 rounded-[4px] 
+              hover:bg-white hover:scale-120 hover:shadow-[1px_1px_15px_#ff6b6b] 
+              hover:text-highlight-text hover:text-shadow-[1px_1px_15px_#FF6B6B]"
+              >
+                Let's Chat
+              </button>
             </div>
           </div>
         </div>

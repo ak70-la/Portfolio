@@ -1,34 +1,22 @@
-import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import { useState } from 'react'
-function Navbar() { 
-const [active, setactive] = useState("");
-function highlight () {
-  setactive("bg-red-500");
-}
+import React from 'react';
 
+
+function Navbar() { 
 
 
   return (
     <>
-       <nav class="bg-black ">
-        <div class="flex items-center justify-between px-6">
+       <nav className='bg-background w-full flex justify-around p-2 sticky top-0'>
           <div>
-            <span class="text-[#b74b4b] p-4 text-lg font-bold text-shadow-[1px_1px_15px_#FF6B6B] ">ARAFAT</span>
+            <span className="text-[#b74b4b] p-4 text-lg font-bold text-shadow-[1px_1px_15px_#FF6B6B]">ARAFAT</span>
           </div>
-          <div class="text-white gap-5 flex mx-auto">{/* hover effect {hover:text-highlight-text hover:underline} */}
-            <NavLink to="/"  className={({ isActive }) =>
-              isActive ? "bg-[rgb(255,107,107)] rounded-3xl p-1" : ""}>Home</NavLink>
-            <NavLink to="about"  className={({ isActive }) =>
-              isActive ? "bg-[#FF6B6B] rounded-3xl p-1" : ""}>About</NavLink>
-            <NavLink to="skills"  className={({ isActive }) =>
-              isActive ? "bg-[#FF6B6B] rounded-3xl p-1" : ""}>Skills</NavLink>
-            <NavLink to="services"  className={({ isActive }) =>
-              isActive ? "bg-[#FF6B6B] rounded-3xl p-1" : ""}>Services</NavLink>
-            <NavLink to="contact"  className={({ isActive }) =>
-              isActive ? "bg-[#FF6B6B] rounded-3xl p-1" : ""}>Contact</NavLink>
+          <div className="text-white gap-5 flex">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
           </div>
-        </div>
        </nav>
     </>
   )
