@@ -1,68 +1,161 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDisplay,
+  faMobileScreen,
+  faCamera,
+  faCode,
+  faUserSecret,
+  faPalette,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Services() {
   return (
     <>
-      <section id="services" className="bg-background text-primary-text h-[100%] p-1">
-        <div className="mt-6">{/* Contant */}
-          <div className="flex items-center justify-center p-2.5 mb-10">{/* title */}
-            <span>Services</span>
+      <section
+        id="services"
+        className="bg-background text-primary-text p-4 w-auto h-[100%]"
+      >
+        <div className="mt-6">
+          {/* Contant */}
+          <div className="flex items-center justify-center p-2.5 mb-10 text-xl">
+            {/* title */}
+            <span className="relative inline-block font-bold">
+              {" "}
+              Services
+              <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-highlight-text"></span>{" "}
+              {/* upper full-width line */}
+              <span className="absolute left-4.5 -bottom-2 h-0.5 w-1/2 bg-highlight-text"></span>
+            </span>
           </div>
-          <div className="grid grid-rows-2 grid-cols-3 place-content-center mr-55 gap-y-10 gap-x-10 ml-70">{/* main box containing carts and main container of services*/}
-            <div className="box">{/* cart 1 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">Software Development</div>
-              <p>
+          {/* main box containing carts and main container of services*/}
+          <div className="grid sm:grid-cols-2 md:grid-rows-2 md:grid-cols-3 place-content-center gap-y-10 gap-x-10 mx-20 ">
+            {/* cart 1 */}
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group 
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              <div className="flex justify-evenly overflow-hidden">{/* icon */}
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text"
+                  icon={faCode}
+                />{" "}{/* For using the FontAwesome free icons import icon name from @fontawesome/free-solid-svg-icons */}
+              </div>
+              <div className="flex justify-evenly overflow-hidden p-2 m-1">{/* Heading */}
+                Software Development
+              </div>
+              <p className="text-center">{/* info */}
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
                 praesentium aspernatur dolorum fugit nostrum impedit quisquam
                 incidunt quis.
               </p>
             </div>
-            <div className="box">{/* cart 2 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">Web Development</div>
-              <p>
+            {/* cart 2 */}
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              <div className="flex justify-evenly overflow-hidden">
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text"
+                  icon={faDisplay}
+                />{" "}
+              </div>
+              <div className="flex justify-evenly overflow-hidden">
+                Web Development
+              </div>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
                 praesentium aspernatur dolorum fugit nostrum impedit quisquam
                 incidunt quis.
               </p>
             </div>
-            <div className="box">{/* cart 3 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">App Development</div>
-              <p>
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-                praesentium aspernatur dolorum fugit nostrum impedit quisquam
-                incidunt quis.
-              </p>
-            </div>  
-            <div className="box">{/* cart 4 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">UI/UX designer</div>
-              <p>
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-                praesentium aspernatur dolorum fugit nostrum impedit quisquam
-                incidunt quis.
-              </p>
-            </div>  
-            <div className="box">{/* cart 5 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">Cyber security</div>
-              <p>
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-                praesentium aspernatur dolorum fugit nostrum impedit quisquam
-                incidunt quis.
-              </p>
-            </div>  
-            <div className="box">{/* cart 6 */}
-              <div className="icon">{/* web devlopment icon*/}</div>
-              <div className="topic">Photography</div>
-              <p>
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              {/* cart 3 */}
+              <div className="flex justify-evenly overflow-hidden">
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text"
+                  icon={faMobileScreen}
+                />{" "}
+              </div>
+              <div className="flex justify-evenly overflow-hidden">
+                App Development
+              </div>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
                 praesentium aspernatur dolorum fugit nostrum impedit quisquam
                 incidunt quis.
               </p>
-            </div>    
+            </div>
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              {/* cart 4 */}
+              <div className="flex justify-evenly overflow-hidden">
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text "
+                  icon={faPalette}
+                />{" "}
+              </div>
+              <div className="flex justify-evenly overflow-hidden">
+                UI/UX designer
+              </div>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+                praesentium aspernatur dolorum fugit nostrum impedit quisquam
+                incidunt quis.
+              </p>
+            </div>
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              {/* cart 5 */}
+              <div className="flex justify-evenly overflow-hidden">
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text "
+                  icon={faUserSecret}
+                />
+              </div>
+              <div className="flex justify-evenly overflow-hidden">
+                Cyber security
+              </div>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+                praesentium aspernatur dolorum fugit nostrum impedit quisquam
+                incidunt quis.
+              </p>
+            </div>
+            <div
+              className="hover:shadow-[1px_1px_5px_#ff6b6b] group
+              hover:text-white hover:bg-active transition ease-in duration-150 p-3 rounded-4xl"
+            >
+              {/* cart 6 transition { transition ease-in duration-300 delay-100 } */}
+              <div className="flex justify-evenly overflow-hidden">
+                {" "}
+                <FontAwesomeIcon
+                  className=" rounded-full bg-active p-3 group-hover:bg-white group-hover:text-highlight-text"
+                  icon={faCamera}
+                />{" "}
+              </div>
+              <div className="flex justify-evenly overflow-hidden">
+                Photograph
+              </div>
+              <p className="text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+                praesentium aspernatur dolorum fugit nostrum impedit quisquam
+                incidunt quis.
+              </p>
+            </div>
           </div>
         </div>
       </section>

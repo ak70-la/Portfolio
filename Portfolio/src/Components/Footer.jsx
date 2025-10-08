@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-      <footer className='bg-highlight-text text-primary-text flex justify-center'>
+      <footer className='bg-highlight-text text-primary-text flex justify-center w-auto'>
         <div className='text-center text-xs'>
             <span>Created By
             <a href="#"> Arafat Khan</a>
